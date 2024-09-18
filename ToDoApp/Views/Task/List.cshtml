@@ -1,0 +1,23 @@
+﻿
+@model List<TaskListViewModel>
+
+
+    <h3 class="text-center mt-5">Gorev Listeleme Sayfasi</h3>
+    <a class="btn btn-success fw-bold mb-3">Yeni Ekle</a>
+
+    <div class="mt-5">
+
+        @foreach (var task in Model)
+    {
+        <div class="card">
+            <div class="card-header fw-bold">
+                @task.Title
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    }
+</div>
